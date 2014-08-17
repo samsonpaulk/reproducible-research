@@ -4,8 +4,11 @@
 
 Download, extract and store the data in the `activity` data frame. Also transform the date field to `Date` format and print a sample of values to understand the data.
 
+
 ```{r}
 fileUrl <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
+
+
 download.file(fileUrl, destfile = "Dataset.zip", method = "curl")
 unzip("Dataset.zip")
 activity <- read.csv("./activity.csv")
